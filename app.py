@@ -73,9 +73,7 @@ def convertir():
         if os.path.exists(video_path):
             os.remove(video_path)
 
-        if os.path.exists(audio_path):
-            os.remove(audio_path)
-
+        # Le fichier MP3 reste disponible pour le téléchargement
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
