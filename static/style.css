@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #111111;
+    color: white;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 780px;
+    margin: auto;
+    padding: 25px 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 42px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 16px;
+    letter-spacing: 4px;
+    margin-top: 2px;
+}
+
+.description {
+    font-size: 17px;
+    margin: 8px 0 20px;
+}
+
+.card {
+    background: #1d1d1d;
+    border-radius: 24px;
+    padding: 28px 45px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+}
+
+.drop-zone {
+    border: 2px dashed #555;
+    border-radius: 18px;
+    padding: 35px 20px;
+    margin-bottom: 22px;
+    cursor: pointer;
+}
+
+.drop-zone:hover {
+    border-color: #3498db;
+}
+
+.icon {
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.drop-zone p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.drop-zone span {
+    display: block;
+    font-size: 12px;
+    margin-top: 10px;
+    color: #aaa;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 13px;
+    font-weight: bold;
+    margin: 10px 0 7px;
+}
+
+input[type="file"],
+select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #444;
+    background: #292929;
+    color: white;
+    font-size: 14px;
+}
+
+select {
+    cursor: pointer;
+}
+
+button {
+    margin-top: 22px;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    background: #3498db;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 11px;
+    color: #888;
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        padding: 20px 12px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    .card {
+        padding: 22px 18px;
+    }
+
+    .drop-zone {
+        padding: 28px 12px;
+    }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SoundX Converter</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>SOUNDX</h1>
+        <h2>CONVERTER</h2>
+
+        <p class="description">
+            Vos vidéos, notre son !
+        </p>
+
+        <div class="card">
+
+            <div class="drop-zone">
+                <div class="icon">📥</div>
+                <p>DÉPOSEZ UNE VIDÉO ICI</p>
+                <span>MP4 • AVI • MKV • MOV</span>
+            </div>
+
+            <form action="/convertir" method="POST" enctype="multipart/form-data">
+
+                <label for="video">CHOISIR UNE VIDÉO</label>
+
+                <input type="file" id="video" name="video" accept=".mp4,.avi,.mkv,.mov" required>
+
+                <label for="qualite">QUALITÉ AUDIO</label>
+
+                <select id="qualite" name="qualite">
+
+                    <option value="128k">128 kbps</option>
+                    <option value="192k" selected>192 kbps</option>
+                    <option value="256k">256 kbps</option>
+                    <option value="320k">320 kbps</option>
+
+                </select>
+
+                <button type="submit">
+                    🎵 CONVERTIR EN MP3
+                </button>
+
+            </form>
+
+        </div>
+
+        <footer>
+            SoundX Converter • Simple • Rapide • Gratuit
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
